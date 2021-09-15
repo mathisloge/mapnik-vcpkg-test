@@ -13,7 +13,7 @@ configure_file(config.hpp.in vcpkg_config.h @ONLY)
 
 add_executable(mapnik-demo rundemo.cpp)
 
-target_link_libraries(mapnik-demo PRIVATE mapnik::core mapnik::mapnik mapnik::json mapnik::wkt ICU::data ICU::i18n ICU::uc)
+target_link_libraries(mapnik-demo PRIVATE mapnik::mapnik mapnik::json mapnik::wkt ICU::data ICU::i18n ICU::uc)
 target_include_directories(mapnik-demo PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 
 file(COPY data DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/demo")
