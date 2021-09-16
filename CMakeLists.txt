@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-if(WIN32)
-    set(CMAKE_TOOLCHAIN_FILE "D:/dev/vcpkg_mapnik/scripts/buildsystems/vcpkg.cmake")
-else()
-    set(CMAKE_TOOLCHAIN_FILE "/mnt/d/dev/vcpkg_mapnik/scripts/buildsystems/vcpkg.cmake")
-endif()
+set(CMAKE_TOOLCHAIN_FILE "D:/dev/vcpkg_mapnik/scripts/buildsystems/vcpkg.cmake" CACHE FILEPATH "vcpkg toolchain")
 project(mapnik-demo)
 
 find_package(mapnik CONFIG REQUIRED)
