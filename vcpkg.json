@@ -1,0 +1,13 @@
+{
+    "name": "mapnik-vcpkg-integration-test",
+    "version-string": "main",
+    "dependencies": [
+        {
+            "name": "mapnik",
+            "features": [
+                "input-shape",
+                "utility-shapeindex"
+            ]
+        }
+    ]
+}
